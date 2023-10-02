@@ -1,10 +1,8 @@
 import React from "react";
 
-interface Props {
-    children: React.ReactNode;
-}
 
-const MoviesPage = ({ children }: Props) => {
+
+const MoviesPage = ({ children }: any) => {
     return (
         <div>MoviesPage</div>
     )

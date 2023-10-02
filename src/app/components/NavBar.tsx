@@ -1,7 +1,7 @@
 
 import Link from 'next/link';
 // import theme from './NavBar.module.css'
-import Twitter from '../../../components/Icons/Twitter';;
+import Twitter from '../../../components/Icons/Twitter';
 import GitHubIcon from '../../../components/Icons/GitHub';
 import Logo from './Logo';
 import Head from 'next/head';
