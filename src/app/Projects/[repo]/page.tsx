@@ -1,4 +1,4 @@
-import Repo from "@/app/components/Repo"
+import Repo from '../../../../components/components/Repo'
 import Link from "next/link"
 
 const Repository = ({params: {repo}}:any) => {
