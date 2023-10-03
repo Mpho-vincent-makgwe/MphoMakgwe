@@ -6,7 +6,9 @@ import GitHubIcon from '../../../components/Icons/GitHub';
 import Logo from './Logo';
 import Head from 'next/head';
 const NavBar =()=>{
-
+    if (typeof window !== 'undefined') {
+        // Your code that depends on window here
+      
     return(
         <>
         <Head >
@@ -31,7 +33,7 @@ const NavBar =()=>{
         </nav>
         </header>
         </>
-    )
+    )}
 }
 
 export default NavBar;

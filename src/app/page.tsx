@@ -7,6 +7,7 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
+
   return (
     <div className="bg-gray-100 min-h-screen">
       <header className="bg-blue-500 py-4">
