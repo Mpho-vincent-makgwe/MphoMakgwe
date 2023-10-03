@@ -1,4 +1,5 @@
-import React, { Fragment } from 'react'
+'use client'
+import React, { useEffect, useState } from 'react';
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
@@ -14,19 +15,22 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  if (typeof window !== 'undefined') {
-  return(
-    <>
-    <Fragment>
-      <div>
-        Loading...
-      </div>
-    </Fragment></>
-  )
-}
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.innerHeight = window.innerHeight;
+      window.innerWidth = window.innerWidth;
+    };
+    setIsClient(true);
+  }, []);
+
   return (
     <html lang="en">
-      <body className={inter.className}><NavBar/>{children}</body>
+      <body className={inter.className}>
+        <NavBar/>
+        {isClient && children}
+        </body>
     </html>
   )
 }

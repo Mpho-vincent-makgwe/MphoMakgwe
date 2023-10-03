@@ -2,9 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const AboutPage = () => {
-  if (typeof window !== 'undefined') {
-    // Your code that depends on window here
-  
+
   return (
     <div className="bg-gray-100 p-4">
       <div className="rounded-full mx-auto mb-4">
@@ -149,7 +147,6 @@ const AboutPage = () => {
         Thank you for taking the time to view my work! 😊
       </p>
     </div>
-  );}
-};
+  );};
 
 export default AboutPage;
