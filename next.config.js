@@ -1,19 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
- 
-    images: {
-        domains: ["lh3.googleusercontent.com","photos.google.com"]
-    },
-    webpack: (config) => {
-        config.module.rules.push({
-          test: /\.(bin|node)$/,
-          use: {
-            loader: 'node-loader',
-          },
-        });
-    
-        return config;
-      },
+  reactStrictMode: false,
+  images: {
+    domains: ["lh3.googleusercontent.com","photos.google.com", "github.com", "img.shields.io", "m.media-amazon.com"]
+},
 }
 
 module.exports = nextConfig

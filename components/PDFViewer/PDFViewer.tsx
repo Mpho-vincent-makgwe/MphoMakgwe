@@ -1,19 +1,16 @@
-'use client'
+// PDFViewer.js
 import React from 'react';
-import DocViewer, {  DocViewerRenderers } from "react-doc-viewer";
+import DocViewer, { DocViewerRenderers } from "@cyntler/react-doc-viewer";
 
 const PDFViewer = ({ pdfUrl }:any) => {
-    const docs = [
-        {uri: pdfUrl,
-        fileType: 'pdf',
-        },
-    ]
+  const docs = [
+    {
+      uri: pdfUrl,
+      fileType: 'pdf',
+    },
+  ];
   return (
-    <div>
-      <DocViewer documents={docs}
-      pluginRenderers={DocViewerRenderers}
-      />
-    </div>
+    <DocViewer documents={docs} pluginRenderers={DocViewerRenderers} />
   );
 };
 
