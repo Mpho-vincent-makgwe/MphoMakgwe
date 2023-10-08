@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { getReposByName } from "@/helpers/utils";
 import { useEffect, useState } from "react";
+import ExtraRepoInfoStructure from "@/components/RepoStructures/ExtraRepoInfoStructure";
 
 const Repository = () => {
     const [ repoData, setRepoData ] = useState({});
@@ -20,16 +21,16 @@ const Repository = () => {
             } 
         }
     };
-
     useEffect(()=>{
           fetchRepoData()  
     },[router.query.repo]);
+
   return (
     <section>
       <Link href="/Projects" className="rounded">
         Back
       </Link>
-      {repoData !== null && <CommonRepo repo={repoData} />}
+      {repoData !== null && (<ExtraRepoInfoStructure repo={repoData} />)}
     </section>
   );
 };

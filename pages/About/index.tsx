@@ -1,17 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
+import { FaLinkedin, FaTwitter, FaGithub, FaMailBulk,FaHtml5, FaCss3, FaJava } from "react-icons/fa";
+import { MdCode, MdStorage, MdDescription } from "react-icons/md";
 
 const AboutPage = () => {
   return (
     <main className="bg-gray-100 p-4">
-      <div className="rounded-full mx-auto mb-4">
+      <div className="flex items-center justify-center"><div className="rounded-full mx-auto mb-4">
       <Image
           src="https://github.com/Mpho-vincent-makgwe/Mpho-Vincent-Makgwe/assets/118048918/36b9e423-5c4b-4544-b006-859056347434"
           alt="Example Image"
           width={200}
           height={200}
+          className="text-center rounded-md"
         />
-      </div>
+      </div></div>
 
       <h1 className="text-2xl font-bold text-blue-600 text-center mb-2">
         Hi there 👋
@@ -21,7 +24,7 @@ const AboutPage = () => {
         Mpho Vincent Makgwe - Full Stack Software Engineering Student 👨‍💻
       </h2>
 
-      <div className="text-lg text-gray-700 mb-6">
+      <div className="text-lg text-black mb-6">
         <h3>Introduction 🙋‍♂️</h3>
         <p>
           Hello, my name is Mpho Vincent Makgwe, and I am currently a
@@ -33,41 +36,19 @@ const AboutPage = () => {
 
       <div className="text-lg text-gray-700 mb-6">
         <h3 className="font-semibold text-lg mb-2">Skills 🚀</h3>
-        <ul className="list-disc list-inside">
-          <li>
-          <Image
-              src="https://img.shields.io/badge/-HTML-orange?style=flat&logo=html5&logoColor=white"
-              alt="HTML"
-              className="inline-block w-4 h-4 mr-2"
-              height={200}
-              width={300}
-            />
-            HTML
-          </li>
-          <li>
-          <Image
-              src="https://img.shields.io/badge/-JavaScript-yellow?style=flat&logo=javascript&logoColor=white"
-              alt="JavaScript"
-              className="inline-block w-4 h-4 mr-2"
-              height={200}
-              width={300}
-            />
-            JavaScript
-          </li>
-          <li>
-          <Image
-              src="https://img.shields.io/badge/-CSS-blue?style=flat&logo=css3&logoColor=white"
-              alt="CSS"
-              className="inline-block w-4 h-4 mr-2"
-              height={200}
-              width={300}
-            />
-            CSS
-          </li>
-        </ul>
+        <div className="flex">
+          <FaHtml5/><FaJava/><FaCss3/>
+          <MdDescription /> {/* Material Icons */} {/* JavaScript icon */}
+          <MdStorage /> {/* Database icon */}
+          <MdDescription /> {/* Document Text icon */}
+          <MdCode /> {/* Material Icons */}
+          {/* VSCode icon */}
+        </div>
+
       </div>
 
-      <h3>Stats 📊</h3>
+<div className="text-black bg-gray-500 rounded-md">
+<h3>Stats 📊</h3>
       {/* Add your GitHub stats component here */}
 
       <h3>Repositories 📚</h3>
@@ -99,31 +80,16 @@ const AboutPage = () => {
         </li>
         {/* Add more repositories as needed */}
       </ul>
+</div>
 
       <div className="text-lg text-gray-700 mb-6">
         <h3 className="font-semibold text-lg mb-2">Contact 📫</h3>
-        <ul className="list-disc list-inside">
-          <li>
-            <strong>Email:</strong> mphomakgwe4@gmail.com
-          </li>
-          <li>
-            <strong>LinkedIn:</strong>{" "}
-            <Link
-              href="https://www.linkedin.com/in/mpho-vincent-makgwe-1ab386199/"
-              className="text-blue-500 hover:underline"
-            >
-              Mpho Vincent Makgwe
-            </Link>
-          </li>
-          <li>
-            <strong>Twitter:</strong>{" "}
-            <Link href="https://twitter.com/youngstoningV">
-              <p className="text-blue-500 hover:underline">
-                Mpho&apos;s Twitter
-              </p>
-            </Link>
-          </li>
-        </ul>
+      <div className='flex list-disc list-inside justify-between w-1/4 m-1 text-black '>
+            <Link className='text-l hover:bg-blue-300 rounded'  href={`mailto:mphomakgwe4@gmail.com`}><strong><FaMailBulk/></strong></Link>
+            <Link className='text-l hover:bg-blue-300 rounded' href={`https://twitter.com/youngstoningV`} target={`_blank`} ><FaTwitter/></Link>
+            <Link className='text-l hover:bg-blue-300 rounded' href={`https://github.com/Mpho-vincent-makgwe`} target={`_blank`} ><FaGithub/></Link>
+            <Link  href={`https://www.linkedin.com/in/mpho-vincent-makgwe-1ab386199/`} target={`_blank`}  className='text-l hover:bg-blue-300 rounded'><FaLinkedin/></Link>
+        </div>
       </div>
 
       <p className="text-lg text-gray-700 text-center">

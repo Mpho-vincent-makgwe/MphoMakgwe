@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero/Hero"
-
+import Link from "next/link";
+import { FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
 const Home=()=> {
   return (
     <main>
@@ -32,7 +33,13 @@ const Home=()=> {
           {/* Add featured project cards here */}
         </section>
       </div>
-
+<section>
+<div className='flex justify-between w-1/4 m-1 '>
+            <Link className='text-l hover:bg-blue-300 rounded' href={`https://twitter.com/youngstoningV`} target={`_blank`} ><FaTwitter/></Link>
+            <Link className='text-l hover:bg-blue-300 rounded' href={`https://github.com/Mpho-vincent-makgwe`} target={`_blank`} ><FaGithub/></Link>
+            <Link  href={`https://www.linkedin.com/in/mpho-vincent-makgwe-1ab386199/`} target={`_blank`}  className='text-l hover:bg-blue-300 rounded'><FaLinkedin/></Link>
+        </div>
+</section>
 
     </main>
   )
