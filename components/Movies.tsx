@@ -1,15 +1,13 @@
+const Movies = ({ items }: any) => {
+  if (!items) {
+    return <div>Loading...</div>;
+  }
 
+  const { l, q, qid, rank, s, y } = items;
 
-const Movies =({ items }:any)=>{
-    if (!items) {
-        return <div>Loading...</div>;
-      }
-const {  id, l, q, qid, rank, s, y } = items;
-
-return (
-    <div>
-      <h2>Title: {l}</h2>
-      <p>ID: {id}</p>
+  return (
+    <div className="bg-gray-800 p-4">
+      <h2 className="text-xl font-semibold">{l}</h2>
       <p>Type: {q}</p>
       <p>Category ID: {qid}</p>
       <p>Rank: {rank}</p>
@@ -17,5 +15,6 @@ return (
       <p>Year: {y}</p>
     </div>
   );
-}
+};
+
 export default Movies;
