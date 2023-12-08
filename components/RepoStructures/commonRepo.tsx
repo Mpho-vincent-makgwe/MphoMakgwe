@@ -1,5 +1,4 @@
 // CommonRepo.js
-import Link from "next/link";
 import { FaStar, FaCodeBranch, FaEye, FaBell } from "react-icons/fa";
 
 const CommonRepo = ({ repo }: any) => {

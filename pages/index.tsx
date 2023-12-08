@@ -3,7 +3,7 @@ import Link from "next/link";
 import { FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
 const Home=()=> {
   return (
-    <main>
+    <main className="">   
       <header className="bg-blue-500 w-full py-4">
         <div className="container mx-auto text-white">
           <h1 className="text-4xl font-extrabold">Welcome to My Portfolio</h1>
@@ -16,9 +16,9 @@ const Home=()=> {
           <Hero />
         </section>
 
-        <section className="bg-zinc-400 shadow-md rounded-lg p-8">
+        <section className="bg-zinc-400 font-md shadow-md rounded-lg p-8">
           <h2 className="text-2xl font-semibold mb-4">About Me</h2>
-          <p className="text-gray-700">
+          <p className="text-gray-700 break-words">
             Hello, my name is Mpho Vincent Makgwe, and I am a full-stack
             software engineering student at CodeLab Academy. I have experience
             working with various programming languages and technologies. My
@@ -35,10 +35,11 @@ const Home=()=> {
       </div>
 <section>
 <div className='flex justify-between w-1/4 m-1 '>
-            <Link className='text-l hover:bg-blue-300 rounded' href={`https://twitter.com/youngstoningV`} target={`_blank`} ><FaTwitter/></Link>
-            <Link className='text-l hover:bg-blue-300 rounded' href={`https://github.com/Mpho-vincent-makgwe`} target={`_blank`} ><FaGithub/></Link>
-            <Link  href={`https://www.linkedin.com/in/mpho-vincent-makgwe-1ab386199/`} target={`_blank`}  className='text-l hover:bg-blue-300 rounded'><FaLinkedin/></Link>
-        </div>
+  <Link className='text-l hover:bg-blue-300 rounded transform scale-110' href={`https://twitter.com/youngstoningV`} target={`_blank`}><FaTwitter/></Link>
+  <Link className='text-l hover:bg-blue-300 rounded transform scale-110' href={`https://github.com/Mpho-vincent-makgwe`} target={`_blank`}><FaGithub/></Link>
+  <Link className='text-l hover:bg-blue-300 rounded transform scale-110' href={`https://www.linkedin.com/in/mpho-vincent-makgwe-1ab386199/`} target={`_blank`}><FaLinkedin/></Link>
+</div>
+
 </section>
 
     </main>

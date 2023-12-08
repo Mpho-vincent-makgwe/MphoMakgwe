@@ -8,7 +8,7 @@ const AboutPage = () => {
     <main className="bg-gray-100 p-4">
       <div className="flex items-center justify-center"><div className="rounded-full mx-auto mb-4">
       <Image
-          src="https://github.com/Mpho-vincent-makgwe/Mpho-Vincent-Makgwe/assets/118048918/36b9e423-5c4b-4544-b006-859056347434"
+          src="/images/Mpho/2a_361A4985.jpg"
           alt="Example Image"
           width={200}
           height={200}
