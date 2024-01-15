@@ -12,10 +12,15 @@
     "@cyntler/react-doc-viewer": "^1.13.0",
     "@heroicons/react": "^2.0.18",
     "@iconify/icons-heroicons-solid": "^1.2.6",
+    "@react-three/drei": "^9.93.1",
+    "@react-three/fiber": "^8.15.14",
+    "framer-motion": "^10.18.0",
     "next": "13.5.4",
     "react": "^18",
     "react-dom": "^18",
-    "react-icons": "^4.11.0"
+    "react-icons": "^4.11.0",
+    "react-intersection-observer": "^9.5.3",
+    "three": "^0.160.0"
   },
   "devDependencies": {
     "@types/node": "^20",

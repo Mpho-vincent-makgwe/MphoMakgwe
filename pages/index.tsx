@@ -3,7 +3,8 @@ import Link from "next/link";
 import { FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
 const Home=()=> {
   return (
-    <main className="">   
+    <main className="h-full w-full">
+      <div>
       <header className="bg-blue-500 w-full py-4">
         <div className="container mx-auto text-white">
           <h1 className="text-4xl font-extrabold">Welcome to My Portfolio</h1>
@@ -34,14 +35,14 @@ const Home=()=> {
         </section>
       </div>
 <section>
-<div className='flex justify-between w-1/4 m-1 '>
+<div className='flex center justify-between w-1/4 m-1 '>
   <Link className='text-l hover:bg-blue-300 rounded transform scale-110' href={`https://twitter.com/youngstoningV`} target={`_blank`}><FaTwitter/></Link>
   <Link className='text-l hover:bg-blue-300 rounded transform scale-110' href={`https://github.com/Mpho-vincent-makgwe`} target={`_blank`}><FaGithub/></Link>
   <Link className='text-l hover:bg-blue-300 rounded transform scale-110' href={`https://www.linkedin.com/in/mpho-vincent-makgwe-1ab386199/`} target={`_blank`}><FaLinkedin/></Link>
 </div>
 
 </section>
-
+      </div> 
     </main>
   )
 };

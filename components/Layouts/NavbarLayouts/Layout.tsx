@@ -3,7 +3,7 @@ import Footer from '@/components/footer/Footer';
 const Layout = ({children}:any) => {
   return (
         <>
-            <NavBar/>
+            {/* <NavBar/> */}
             {children}
             <Footer/>
         </>);

@@ -5,7 +5,9 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
     <Layout>
+      <div className={`bg-[#030014] overflow-scroll overflow-x-hidden`}>
         <Component {...pageProps} />
+      </div>
     </Layout>
     </>
   )

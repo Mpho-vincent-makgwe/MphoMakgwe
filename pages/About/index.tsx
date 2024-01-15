@@ -28,8 +28,9 @@ const AboutPage = () => {
         <h3>Introduction 🙋‍♂️</h3>
         <p>
           Hello, my name is Mpho Vincent Makgwe, and I am currently a
-          full-stack software engineering student at CodeLab Academy. I have
-          experience working with a variety of programming languages, including
+          full-stack software engineering with a profession in Javascript Engineering,
+          I am a graduate and in addintion I have a strong background in mechanical Engineering.
+          I have experience working with a variety of programming languages, including
           HTML, CSS, JavaScript, PHP, Vue, and Node.js.
         </p>
       </div>
