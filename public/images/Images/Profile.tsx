@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import CenterCard from '../Layouts/Card';
+import CenterCard from "../../../components/Layouts/Card"
 import theme from './Profile.module.css'
 const ProfilePictur =()=>{
     return(
