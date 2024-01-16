@@ -1,9 +1,9 @@
-import NavBar from '@/components/Nav/NavBar';
+import Navbar from '@/components/Nav/Navbar';
 import Footer from '@/components/footer/Footer';
 const Layout = ({children}:any) => {
   return (
         <>
-            {/* <NavBar/> */}
+            <Navbar/>
             {children}
             <Footer/>
         </>);

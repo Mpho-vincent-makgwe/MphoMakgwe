@@ -1,18 +1,19 @@
-import Hero from "@/components/Hero/Hero"
+import Hero from "@/components/Hero/HeroM"
+import Encryption from "@/components/main/Encryption";
+import Skills from "@/components/main/Skills"
 import Link from "next/link";
-import { FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
+// import { FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
+// import ProjectsPage from "./Projects";
 const Home=()=> {
   return (
     <main className="h-full w-full">
-      <div>
-      <header className="bg-blue-500 w-full py-4">
+            <div className="container mx-auto py-8">
+            <header className="bg-blue-500 w-full py-4">
         <div className="container mx-auto text-white">
           <h1 className="text-4xl font-extrabold">Welcome to My Portfolio</h1>
           <p className="text-lg">Discover my work and skills</p>
         </div>
       </header>
-
-      <div className="container mx-auto py-8">
         <section className="mb-12">
           <Hero />
         </section>
@@ -28,20 +29,19 @@ const Home=()=> {
           </p>
           {/* You can add more content about yourself here */}
         </section>
-
-        <section className="mt-12">
-          <h2 className="text-2xl font-semibold mb-4">Featured Projects</h2>
-          {/* Add featured project cards here */}
-        </section>
       </div>
-<section>
+      <div className="flex flex-col gap-20">
+        <Skills />
+        <Encryption />
+        {/* <ProjectsPage /> */}
+{/* <section>
 <div className='flex center justify-between w-1/4 m-1 '>
   <Link className='text-l hover:bg-blue-300 rounded transform scale-110' href={`https://twitter.com/youngstoningV`} target={`_blank`}><FaTwitter/></Link>
   <Link className='text-l hover:bg-blue-300 rounded transform scale-110' href={`https://github.com/Mpho-vincent-makgwe`} target={`_blank`}><FaGithub/></Link>
   <Link className='text-l hover:bg-blue-300 rounded transform scale-110' href={`https://www.linkedin.com/in/mpho-vincent-makgwe-1ab386199/`} target={`_blank`}><FaLinkedin/></Link>
 </div>
 
-</section>
+</section> */}
       </div> 
     </main>
   )
