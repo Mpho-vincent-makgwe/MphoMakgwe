@@ -1,6 +1,6 @@
-import Hero from "@/components/Hero/HeroM"
-import Encryption from "@/components/main/Encryption";
-import Skills from "@/components/main/Skills"
+import Hero from "../components/Hero/HeroM"
+import Encryption from "../components/main/Encryption";
+import Skills from "../components/main/Skills"
 import Link from "next/link";
 // import { FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
 // import ProjectsPage from "./Projects";
