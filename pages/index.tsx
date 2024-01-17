@@ -8,7 +8,7 @@ const Home=()=> {
   return (
     <main className="h-full w-full">
             <div className="container mx-auto py-8">
-            <header className="bg-blue-500 w-full py-4">
+            <header className="bg-blue-500 w-full py-4 pt-8">
         <div className="container mx-auto text-white">
           <h1 className="text-4xl font-extrabold">Welcome to My Portfolio</h1>
           <p className="text-lg">Discover my work and skills</p>
