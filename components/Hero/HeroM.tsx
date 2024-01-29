@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Hero = () => {
   return (
-    <section className={theme.hero}>
+    <section className={`${theme.hero} text-white`}>
       <div className={theme.image}>
         <Image alt='Mpho Vincent Makgwe' src="/images/Mpho/1a_361A4982.jpg" width={300} height={300} />
       </div>

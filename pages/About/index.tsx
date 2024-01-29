@@ -16,11 +16,11 @@ const AboutPage = () => {
         />
       </div></div>
 
-      <h1 className="text-2xl font-bold text-blue-600 text-center mb-2">
+      <h1 className="text-2xl font-bold text-white text-center mb-2">
         Hi there 👋
       </h1>
 
-      <h2 className="text-xl font-semibold text-gray-800 text-center mb-4">
+      <h2 className="text-xl font-semibold text-white text-center mb-4">
         Mpho Vincent Makgwe - Full Stack Software Engineering Student 👨‍💻
       </h2>
 

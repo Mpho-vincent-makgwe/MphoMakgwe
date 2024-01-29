@@ -8,4 +8,4 @@ const ProfilePictur =()=>{
         </CenterCard>
     )
 };
-export default ProfilePictur;
+export default ProfilePictur;;
